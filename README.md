@@ -18,3 +18,5 @@ The Server and the Webclient have separate docker-compose files.
 ## Getting started...
 We created a simple docker-compose file which contains the backend, postgresql, mongodb and the webclient. To make it even easier we created a start script, that also replaces two files which are necessary to use the project locally. Because the default projects are optimized for public usage. <br>
 To start the Project just run ``./start.sh``, if you want to stop the complete project just run ``docker-compose down``
+## Usage
+After everything is up, you can simply open the Webclient in your favorite Browser under [localhost:5000](http://localhost:5000)
