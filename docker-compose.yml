@@ -1,0 +1,46 @@
+version: "3"
+services:
+  webclient:
+    build:
+      context: ./webclient
+    image: asciiflix_webclient
+    container_name: asciiflix_webclient
+    restart: always
+    ports: 
+      - 5000:80
+    depends_on:
+      - server
+    networks:
+      - frontend
+  database:
+    extends:
+      file: ./server/docker-compose.yml
+      service: database
+  video_storage:
+    extends:
+      file: ./server/docker-compose.yml
+      service: video_storage
+  server:
+    build:
+      context: ./server
+      args:
+        - VERSION=delivery
+    image: asciiflix_server
+    container_name: asciiflix_server
+    restart: always
+    env_file: ./server/config.env
+    depends_on:
+      - database
+      - video_storage
+    networks:
+      - frontend
+      - backend
+    ports:
+      - 8080:8080
+
+volumes:
+  data:
+  mongo-data:
+networks:
+  frontend:
+  backend:

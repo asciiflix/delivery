@@ -1,0 +1,6 @@
+[submodule "webclient"]
+	path = webclient
+	url = https://github.com/asciiflix/webclient
+[submodule "server"]
+	path = server
+	url = https://github.com/asciiflix/server
