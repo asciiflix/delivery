@@ -19,7 +19,7 @@ The Server and the Webclient have separate docker-compose files.
 ### Server
 
 - Language: go
-- Version: v.0.4.7
+- Version: v.1.0.2
 - Description: Backend of the project, manages users, video-information's and video-content and more.
 - Uses: PostgreSQL and MongoDB
 - Repository: [github.com/asciiflix/server](https://github.com/asciiflix/server)
@@ -56,7 +56,7 @@ After everything is up, you can simply open the Webclient in your favorite Brows
 
 # Manual
 
-Coming soon....
+We have a manual here: [Manual](manual.md)
 
 # About
 
