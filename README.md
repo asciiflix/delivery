@@ -19,7 +19,7 @@ The Server and the Webclient have separate docker-compose files.
 ### Server
 
 - Language: go
-- Version: v.1.0.4
+- Version: v.1.0.5
 - Description: Backend of the project, manages users, video-information's and video-content and more.
 - Uses: PostgreSQL and MongoDB
 - Repository: [github.com/asciiflix/server](https://github.com/asciiflix/server)
@@ -27,7 +27,7 @@ The Server and the Webclient have separate docker-compose files.
 ### Webclient
 
 - Language: React (TypeScript)
-- Version: v.1.0.2
+- Version: v.1.0.3
 - Description: Frontend - webclient
 - Uses: Backend ;)
 - Repository: [github.com/asciiflix/webclient](https://github.com/asciiflix/webclient)
